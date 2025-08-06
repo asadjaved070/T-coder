@@ -8,6 +8,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/ca.avif" type="image/x-icon">
+        <style>
+        @media only screen and (max-width:980px) {
+            #purple {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+            }
+            #purple>button {
+                margin: 2% 0% 1% 0%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -52,7 +65,7 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-primary" type="submit">Search</button>
                 </form>
-                <div class="mx-2 ">
+                <div class="mx-2 " id="purple">
                     <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
                     <button class="btn btn-outline-danger " data-bs-toggle="modal" data-bs-target="#SignUp">SignUp</button>
                 </div>
@@ -314,5 +327,6 @@
 
 
 </html>
+
 
 
